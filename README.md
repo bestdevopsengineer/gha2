@@ -21,7 +21,20 @@
      
 
 # 4. GitHub runs the container and injects env vars
+
+        This is the key moment.   
+        GitHub runs something equivalent to:
+        
      docker run \
       -e INPUT_USERNAME="Aristide" \
       my-action-image \
       "Aristide"
+
+      Two things happen:
+
+        It passes the input as an argument (because you used args:)
+        It also injects it as an environment variable (INPUT_USERNAME)
+        This is why your entrypoint script can do:
+
+        echo "$INPUT_USERNAME"
+
