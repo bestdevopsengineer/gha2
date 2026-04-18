@@ -1,5 +1,8 @@
 # gha2
 
+# How can you access an environment variable corresponding to an input in a Docker container action?
+# use the args keyword in the action metadata file to pass the input to the Docker container 
+
 # 1. Your workflow calls the action
     - name: Run my Docker action
       uses: ./
