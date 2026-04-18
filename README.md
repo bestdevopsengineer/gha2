@@ -27,9 +27,9 @@
         
      docker run \
       -e INPUT_USERNAME="Aristide" \
-      my-action-image \
-      "Aristide"
+      my-action-image 
 
+      
       Two things happen:
 
         It passes the input as an argument (because you used args:)
