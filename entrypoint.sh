@@ -1,3 +1,5 @@
 #!/bin/sh
 
-echo "Username from input: $INPUT_USERNAME"
+echo "Hello from Docker action"
+echo "Username is: $INPUT_USERNAME"
+
